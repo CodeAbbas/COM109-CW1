@@ -39,3 +39,4 @@ function supernova_slider() {
 }
 
 supernova_slider();
+  
