@@ -13,27 +13,39 @@
 
 <body>
   <section class="hero-section">
+    <!-- Nav bar -->
     <nav class="navbar">
       <div class="hero">
-        <a href="#" class="navbar-logo"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png"
-            alt="Ali Store"></a>
+        <a href="#" class="navbar-logo"><img src="./img/alistore.png" alt="Ali Store"></a>
         <ul class="navbar-menu">
           <li><a href="#">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li>
             <div class="dropdown">
-              <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products</a></div>
+              <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products <i
+                    class="fa fa-angle-down"></i></a></div>
               <div class="dropdown-content">
                 <a href="./index.html">Fruit</a>
                 <a href="./index.html">Vegetables</a>
                 <a href="./index.html">Drinks</a>
               </div>
-              <div>
+            </div>
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="dark-light"><svg style="width:24px; margin: 10px; " viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+          </svg></div>
+      </div>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
     </nav>
+
+    <!-- Hero Slider Gallery -->
     <div class="homepage-hero-slider gallery">
       <div class="photos">
         <div class="slide block active"
@@ -55,20 +67,67 @@
       </div>
     </div>
     <h1 class="title">Ali Varities Store</h1>
-    <p>Ali Varieties Store is your friendly neighborhood one-stop shop, brimming with everyday essentials. From
-      household items and cleaning supplies to personal hygiene products and perhaps even snacks, they've got you
-      covered. Expect to find a mix of popular brands and friendly service, making Ali Varieties a convenient and
-      reliable choice for your daily needs.
-    </p>
+    <!-- Categories List -->
+    <div id="menu-categories">
+      <ol>
+        <li>
+          <span class="food-category-name">Produce</span>
+          <img
+            src="https://i.ibb.co/6m9JdBh/png-clipart-organic-food-vegetable-fruit-local-food-produce-natural-foods-leaf-vegetable-removebg-pr.png"
+            alt="Produce" loading="lazy">
+        </li>
+        <li class="active">
+          <span class="food-category-name">Meat</span>
+          <img
+            src="https://i.ibb.co/t2Y6vbD/imgbin-halal-sashimi-ham-roast-beef-lamb-and-mutton-ham-j-KQft-CDzy-Xb-Wbi-Bp-M61q-Tqbnu-removebg-pr.png"
+            alt="Meat" loading="lazy" />
+        </li>
+        <li>
+          <span class="food-category-name">Dairy</span>
+          <img src="https://i.ibb.co/BNTGXj2/IMG-20240718-204604.png" alt="Dairy" loading="lazy" />
+        </li>
+        <li>
+          <span class="food-category-name">Bakery</span>
+          <img src="https://i.ibb.co/71tBL9t/Bakery-PNG-Free-Download.png" alt="Bakery" loading="lazy" />
+        </li>
+        <li>
+          <span class="food-category-name">Carbohydrate</span>
+          <img src="https://i.ibb.co/9HtR3k9/Picsart-24-07-18-21-25-27-568.png" alt="Carbohydrate" loading="lazy" />
+        </li>
+        <li>
+          <span class="food-category-name">Snacks & Sides</span>
+          <img
+            src="https://lh6.ggpht.com/dFWl3zlKe9uP8u0vAS6hb6CNxSBGYwopAgSfTTEzIhQ0QJdXv85r0lStE01kXN4-nrfm-2fhdPt74AoL0YM=s113"
+            alt="Snacks" loading="lazy" />
+        </li>
+        <li class="drinks">
+          <span class="food-category-name">Drinks</span>
+          <img
+            src="https://lh4.ggpht.com/_TonK_CrZJ3b2gOheqIlL_llzpLQQCLaD_s-i4Bq6-KgnnYMgXZgD55uc1afR-EUi5SSvqFHVOKMd9jtCnBp=s113"
+            alt="Drinks" loading="lazy" />
+        </li>
+        <li class="ice-cream">
+          <span class="food-category-name">Masala</span>
+          <img
+            src="https://i.ibb.co/CnDsGbw/pngtree-traditional-christmas-spices-star-anise-with-cinnamon-and-cloves-png-image-12851435.png"
+            alt="Masala" loading="lazy" />
+        </li>
+        <li>
+          <span class="food-category-name">Households</span>
+          <img src="https://i.ibb.co/60LwjKL/pngwing-com.png" alt="Households" loading="lazy" />
+        </li>
+      </ol>
+    </div>
   </section>
+  <!-- Category Section -->
   <section class="products" id="products">
     <h1 style="border-bottom: 1px solid black;">Products</h1>
     <div class="product-grid">
       <div class="product-item">
         <img loading="lazy"
           src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg"
-          alt="Product 1">
-        <h2>Product 1</h2>
+          alt="Product 2">
+        <h2>Product 2</h2>
         <p>Product description</p>
         <button>Add to Cart</button>
       </div>
@@ -114,6 +173,7 @@
       </div>
     </div>
   </section>
+  <!-- Contact Section -->
   <section class="contact-section scpad" id="contact">
     <h2>Contact Us</h2>
     <p style="text-align: center;">We would love to hear from you! Fill out the form below to contact us.</p>
@@ -125,6 +185,7 @@
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
       </div>
       <div class="form-group">
         <label for="message">Message:</label>
@@ -137,10 +198,11 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <a href="#"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png" alt="Ali Varities Store"></a>
+        <a href="#"><img src="./img/alistore.png" alt="Ali Varities Store"></a>
         <p style="text-align: center;"><i>139 Green Street, London, E7 8DW</i></p>
       </div>
 
@@ -166,7 +228,6 @@
       <p class="top"><a href="#">Back &#x2191; to top</a></p>
     </div>
   </footer>
-
 
 
   <script src="./script/script.js"></script>
