@@ -102,6 +102,7 @@ body {
 .dark-light{
   cursor:pointer;
   margin:0 2rem;
+  align-items: center;
 }
 .navbar-menu li a {
   text-decoration: none;
@@ -109,6 +110,24 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+.signin{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  margin: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--color);
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.error {
+      color: red;
+      font-size: 1em;
+      font-weight: 500;
+    }
 
 .hamburger {
   display: none;
@@ -159,9 +178,8 @@ body {
   .navbar-menu {
     position: absolute;
     top: 80%;
-    
     width: 324px; 
-    height: 180px;
+    height: 190px;
     border-radius: 10px;
     border: 1px solid var(--color);
     background-color: var(--bg-color); 
@@ -178,6 +196,10 @@ body {
     margin: 10px 10px;
     color: var(--color);
   }
+  .fa-angle-down{
+    float: right;
+    margin-right: 10px
+  }
 
   .navbar-menu.active {
     display: block;
@@ -190,7 +212,7 @@ body {
     color: var(--color);
   }
   .dark-light{
-    margin-right: 3rem
+    margin-right: 3rem;
   }
  }
 
@@ -249,8 +271,9 @@ body {
 
 
 .title {
-  font-size: 2em;
   font-family: "Lilita One", sans-serif;
+  font-size: 2em;
+  letter-spacing: .2rem;
   opacity: 0.8;
   font-weight: bold;
   margin-bottom: 10px;
@@ -360,12 +383,13 @@ li img{
 
 .product-item h2 {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .product-item p {
   font-size: 12px;
   color: #666;
+  margin: -10px;
 }
 .cart{
   display: flex;
@@ -417,6 +441,7 @@ li img{
 
 .contact-section .form-group {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .contact-section .form-group label {
@@ -428,15 +453,48 @@ li img{
 
 .contact-section .form-group input,
 .contact-section .form-group textarea {
+  font-family: 'Quicksand', sans-serif;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
-
+.contact-section .form-group input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.contact-section .form-group.succes input{
+  border-color: #2ecc71;
+}
 .contact-section .form-group textarea {
   height: 150px;
+}
+.form-group i{
+  visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: -10px;
+}
+.form-group.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-group.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-group small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 10;
+	left: 5px;
+	visibility: hidden;
+}
+
+.form-group.error small {
+	visibility: visible;
 }
 
 .contact-section button {
