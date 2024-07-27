@@ -5,33 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .values {
+            display: flex;
+            width: 100%;
+        }
+
+        .values img {
+            margin-left: 20px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .values h2 {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .values img {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .values {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .footer-social li {
+            list-style: none;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="hero">
-            <a href="#" class="navbar-logo"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png"
-                    alt="Spider-Man"></a>
+            <a href="#" class="navbar-logo"><img src="./img/alistore.png" alt="Ali Store"></a>
             <ul class="navbar-menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li>
                     <div class="dropdown">
-                        <div class="dropbtn"><a href="./index.html#products">Products</a></div>
+                        <div class="dropbtn"><a href="./index.html#products" style="transition: 0.1s;">Products <i
+                                    class="fa fa-angle-down"></i></a></div>
                         <div class="dropdown-content">
-                            <a href="index.html">Fruit</a>
-                            <a href="index.html">Vegetables</a>
-                            <a href="#">other items</a>
-                            <a href="#">other items</a>
-                            <a href="#">other items</a>
-                            <a href="#">other items</a>
-                            <a href="#">other items</a>
+                            <a href="./index.html">Fruit</a>
+                            <a href="./index.html">Vegetables</a>
+                            <a href="./index.html">Drinks</a>
                         </div>
-                        <div>
+                    </div>
                 </li>
                 <li><a href="./index.html#contact">Contact</a></li>
+                <button class="signin">Sign in</button>
             </ul>
+            <div class="dark-light"><svg style="width:24px; margin: 10px; " viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:24px; margin: 10px;" height="24"
+                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+
+                </svg>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
         </div>
     </nav>
     <section class="about-us scpad">
@@ -45,22 +96,26 @@
                         products that cater to their needs and preferences. We strive to build long-term relationships
                         with our customers by providing them with an exceptional shopping experience.</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="https://www.addlestoneone.co.uk/images/waitrose_checkout_3.jpg" alt="Team Photo">
+                <div class="values">
+                    <img src="./img/lady.jpg" alt="Team Photo" loading="lazy">
+                    <div class="value">
+                        <h2>Our Values</h2>
+                        <ul>
+                            <li>Quality: We are committed to providing high-quality products that meet our customers'
+                                needs.
+                            </li>
+                            <li>Innovation: We strive to stay ahead of the curve by continuously innovating and
+                                improving
+                                our products and services.</li>
+                            <li>Customer Service: We are dedicated to providing exceptional customer service and
+                                building
+                                long-term relationships with our customers.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Our Values</h2>
-                    <ul>
-                        <li>Quality: We are committed to providing high-quality products that meet our customers' needs.
-                        </li>
-                        <li>Innovation: We strive to stay ahead of the curve by continuously innovating and improving
-                            our products and services.</li>
-                        <li>Customer Service: We are dedicated to providing exceptional customer service and building
-                            long-term relationships with our customers.</li>
-                    </ul>
-                </div>
+
             </div>
             <p>autem culpa vel impedit libero fugit maxime neque magnam quasi perspiciatis illo ut harum tempora
                 excepturi. Autem eum sint molestiae ex reiciendis ipsa. Adipisci praesentium esse repudiandae itaque
@@ -76,9 +131,65 @@
                 voluptatem itaque. Tenetur dolor natus harum dolorem quas, eius quis! A autem ipsa tempora animi
                 tate odio fugit molestias perferendis, dignissimos, maxime nobis ex possimus ut,
                 porro nam excepturi quaerat esse? Consectetur ut illo quibusdam perspiciatis! Hic optio, eveniet
-                </p>
+            </p>
         </div>
     </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png"
+                        alt="Ali Varities Store"></a>
+                <p style="text-align: center;"><i>139 Green Street, London, E7 8DW</i></p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Social Media</h3 
+                <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i>AliStore</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i>AliStore</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a>AliStore</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2024 Ali Varities Store. All Rights Reserved.</p>
+            <p class="top"><a href="#">Back &#x2191; to top</a></p>
+        </div>
+    </footer>
+    <script>
+        // Error handling for menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navbarMenu = document.querySelector(".navbar-menu");
+
+        if (hamburger && navbarMenu) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarMenu.classList.toggle("active");
+            });
+        } else {
+            console.error("Error!");
+        }
+
+        // Error handling for dark mode toggle
+        const toggleButton = document.querySelector('.dark-light');
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+        } else {
+            console.error("Error!");
+        }
+    </script>
 </body>
 
 </html>
