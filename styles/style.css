@@ -99,10 +99,22 @@ body {
   border-bottom: 0.1875em solid #000000;
   transition: .1s;
 }
-.dark-light{
-  cursor:pointer;
-  margin:0 2rem;
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem;
   align-items: center;
+
+}
+
+.dark-light {
+  cursor: pointer;
+
+}
+
+.cart {
+  cursor: pointer;
+
 }
 .navbar-menu li a {
   text-decoration: none;
@@ -211,7 +223,7 @@ body {
   .hamburger .line{
     color: var(--color);
   }
-  .dark-light{
+  .nav-buttons{
     margin-right: 3rem;
   }
  }
