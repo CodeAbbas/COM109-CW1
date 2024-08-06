@@ -216,26 +216,27 @@
 
         <div class="form-container">
             <div class="form">
-                <h1>Sign in</h1>
+                <h1>Sign Up</h1>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Abbas Uddin" required>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="abbax.uddin@gmail.com" required>
-                <div class="pass">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                    <i class="fa fa-eye" id="eye-icon" onclick="togglePassword()"></i>
-                </div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+               <i class="fa fa-eye" id="eye-icon"           onclick="togglePassword()"></i>
                 <input type="checkbox" class="term" id="terms" name="terms" required>
                 <label for="terms">I agree to the Terms and Conditions</label>
-                <button type="submit">Sign in</button>
-                <a href="./signup.html">Doesn't have an account? <span>Sign
-                        up</span></a>
-            </div>
+                <button type="submit">Create Account</button>
+                <a href="../users/signin.html">Already have an account? <span>Sign in</span></a>
+              </div>
             <div class="image-container">
-                <img src="https://cdn-lite.ip2location.com/img/sign-up.png">
+        
+               <img src="https://cdn-lite.ip2location.com/img/sign-up.png">
+        
             </div>
-        </div>
+          </div>
 
-        <footer class="footer">
+          <footer class="footer">
             <div class="footer-content">
               <div class="footer-logo">
                 <a href="#"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png" alt="Ali Varities Store"></a>
@@ -259,8 +260,7 @@
                 </ul>
               </div>
               <div class="footer-social">
-                <h3>Social Media</h3 
-                <ul>
+                <h3>Social Media</h3 <ul>
                 <li><a href="#"><i class="fa-brands fa-facebook"></i>AliStore</a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i>AliStore</a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a>AliStore</li>
@@ -272,7 +272,6 @@
               <p class="top"><a href="#">Back &#x2191; to top</a></p>
             </div>
           </footer>
-
 
         <script>
         // Error handling for menu toggle
