@@ -116,11 +116,46 @@ body {
   cursor: pointer;
 
 }
+.cart-menu{
+  right:0;
+  margin-right: 40px;
+  position: absolute;
+  margin-top: 20px;
+  top:80%;
+    width: 324px; 
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color);
+    background-color: var(--bg-color); 
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.cart-menu.active {
+    display: block;
+    z-index:1000;
+  }
+
+.cart-menu ul li {
+  margin: 10px 10px;
+  text-decoration: none;
+  list-style: none;
+}
 .navbar-menu li a {
   text-decoration: none;
   color: var(--color);
   font-size: 18px;
   font-weight: 500;
+}
+.cart-menu h2{
+  text-align: left;
+  margin:10px 40px;
+}
+.cart-menu i{
+  font-size: 1.5rem;
+  margin: 12px 15px;
+  cursor: pointer;
+  float: right;
+  opacity: 0.7
 }
 .signin{
   font-family: 'Quicksand', sans-serif;
@@ -226,6 +261,23 @@ body {
   .nav-buttons{
     margin-right: 3rem;
   }
+  
+  .cart-menu{
+    position: absolute;
+    top: 80%;
+    width: 324px; 
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color);
+    background-color: var(--bg-color); 
+    transition: all 0.3s ease-in-out;
+    display: none;
+  }
+  .cart-menu.active {
+    display: block;
+    z-index:1000;
+  }
+  
  }
 
 
@@ -258,7 +310,7 @@ body {
 }
 
 .gallery .buttons .prev {
-  border-radius: 0 3px 3px 0;
+  border-radius: 60%;
   float: left;
 }
 
@@ -552,6 +604,11 @@ li img{
   width: 100px;
   height: auto;
 }
+.aerial-view-media {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
 
 .footer-links,
 .footer-social {
