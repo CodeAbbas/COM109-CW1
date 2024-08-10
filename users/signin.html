@@ -321,7 +321,7 @@ function handleSignin(event) {
     // Successful login
     localStorage.setItem('isLoggedIn', true);
     alert('Sign in successful!');
-    // Redirect to protected page
+    window.location.href = '../index.html';
   } else {
     alert('Invalid email or password');
   }
