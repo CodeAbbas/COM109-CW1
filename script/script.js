@@ -1,41 +1,41 @@
 // Gallery slider
 function gallery_slider() {
-    let nextBtn = document.querySelector(".gallery .buttons .next"),
-        prevBtn = document.querySelector(".gallery .buttons .prev"),
-        slide = document.querySelectorAll(".gallery .photos .block"),
-        i = 0;
+  let nextBtn = document.querySelector(".gallery .buttons .next"),
+    prevBtn = document.querySelector(".gallery .buttons .prev"),
+    slide = document.querySelectorAll(".gallery .photos .block"),
+    i = 0;
 
-    prevBtn.onclick = (event) => {
-        event.preventDefault();
+  prevBtn.onclick = (event) => {
+    event.preventDefault();
 
-        slide[i].classList.remove("active");
-        i--;
+    slide[i].classList.remove("active");
+    i--;
 
-        if (i < 0) {
-            i = slide.length - 1;
-        }
-        slide[i].classList.add("active");
-    };
-
-    nextBtn.onclick = (event) => {
-        event.preventDefault();
-
-        slide[i].classList.remove("active");
-        i++;
-
-        if (i >= slide.length) {
-            i = 0;
-        }
-
-        slide[i].classList.add("active");
-    };
-
-    slider_callback();
-    let sliderInterval = window.setInterval(slider_callback, 3000);
-
-    function slider_callback() {
-        nextBtn.click();
+    if (i < 0) {
+      i = slide.length - 1;
     }
+    slide[i].classList.add("active");
+  };
+
+  nextBtn.onclick = (event) => {
+    event.preventDefault();
+
+    slide[i].classList.remove("active");
+    i++;
+
+    if (i >= slide.length) {
+      i = 0;
+    }
+
+    slide[i].classList.add("active");
+  };
+
+  slider_callback();
+  let sliderInterval = window.setInterval(slider_callback, 3000);
+
+  function slider_callback() {
+    nextBtn.click();
+  }
 }
 
 gallery_slider();
@@ -61,7 +61,7 @@ if (cart && cartMenu) {
   cart.addEventListener("click", () => {
     cart.classList.toggle("active");
     cartMenu.classList.toggle("active");
-    
+
     setTimeout(() => {
       cart.classList.remove("active");
       cartMenu.classList.remove("active");
@@ -180,4 +180,5 @@ function isEmail(email) {
 
 
 
-// Map
+// popup 
+promoBox({ imagePath: "https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/img/banner.jpg", link: "https://github.com/rolandtoth/promoBox", target: "_blank", disableOverlay: false, disableOverlayClose: false, disableStyles: false, disableCloseButton: false, disableKeyClose: false, closeButtonText: "✖️", showOnHash: "#promo", deleteCookieOnUrl: "#clear", fadeInDuration: 3, fadeOutDuration: 0.2, loadDelay: 0.1, autoCloseSeconds: 30 }); // callback functions var promoBoxStart = function () { if (typeof console !== "undefined") { console.log("promoBox has started..."); } }; var promoBoxClick = function () { if (typeof console !== "undefined") { console.log("promoBox image was clicked"); } }; var promoBoxClose = function () { if (typeof console !== "undefined") { console.log("promoBox terminated"); } }; 
