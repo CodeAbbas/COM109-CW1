@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="hero">
-        <a href="#" class="navbar-logo"><img src="./img/alistore.png" alt="Ali Store"></a>
+        <a href="#" class="navbar-logo"><img src="./img/alistore.jpg" alt="Ali Store"></a>
         <ul class="navbar-menu">
           <li><a href="#">Home</a></li>
           <li><a href="./about.html">About</a></li>
@@ -50,6 +50,7 @@
                 d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
             </svg>
           </div>
+          
         </div>
 
       </div>
@@ -58,8 +59,8 @@
         <span class="line"></span>
         <span class="line"></span>
       </div>
-      <div class="cart-menu">
-        <i class="fa-solid fa-xmark" id="close"></i>
+      <!--<div class="cart-menu">
+        
         <h2>Cart</h2>
         <hr>
         <ul>
@@ -68,6 +69,37 @@
           <li>Sprite</li>
         </ul>
         <hr>
+      </div>-->
+      <div class="cart-container">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+          </thead>
+          <tbody id="carttable">
+          </tbody>
+        </table>
+        <hr>
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+           
+            <td>£<span id="total">0</span></td>
+          </tr></table>
+
+          
+        <div class="cart-buttons">  
+          <button id="emptycart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
       </div>
     </nav>
 
@@ -232,6 +264,15 @@
           </div>
         </div>
       </div><!--item sq-box -->
+      <div class="product">
+        <img loading="lazy"
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg"
+          alt="Product 6">
+        <h3 class="productname">Product 1</h3>
+        <p>Product description excerpt...</p>
+        <p class="price">$5.05</p>
+        <button class="addtocart">Add To Cart</button>
+    </div>
     </div>
   </section>
   <!-- Contact section -->
@@ -271,7 +312,7 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <a href="#"><img src="https://i.ibb.co/02G98Mb/Picsart-24-06-17-22-43-18-115.png" alt="Ali Varities Store"></a>
+        <a href="#"><img src="./img/AliStore.jpg" alt="Ali Varities Store"></a>
         <p style="text-align: center;"><i>139 Green Street, London, E7 8DW</i></p>
       </div>
 

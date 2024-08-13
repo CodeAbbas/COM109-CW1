@@ -54,7 +54,7 @@ if (hamburger && navbarMenu) {
 }
 // Cart
 const cart = document.querySelector(".cart");
-const cartMenu = document.querySelector(".cart-menu");
+const cartMenu = document.querySelector(".cart-container");
 const closeButton = document.querySelector("#close");
 
 if (cart && cartMenu) {
@@ -76,6 +76,7 @@ if (cart && cartMenu) {
   console.error("Error!");
 
 }
+  //
 
 // Error handling for dark mode toggle
 const toggleButton = document.querySelector('.dark-light');
