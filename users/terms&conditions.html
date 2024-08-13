@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Varities Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+.terms-conditions{
+    padding: 2em;
+}
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="hero">
+          <a href="#" class="navbar-logo"><img src="../img/AliStore.jpg" alt="Ali Store"></a>
+          <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              <div class="dropdown">
+                <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products <i
+                      class="fa fa-angle-down"></i></a></div>
+                <div class="dropdown-content">
+                  <a href="./index.html">Fruit</a>
+                  <a href="./index.html">Vegetables</a>
+                  <a href="./index.html">Drinks</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="signin"><a href="./users/signin.html">Sign in</a></button>
+          </ul>
+          <div class="nav-buttons">
+            <div class="dark-light">
+              <svg style="width:24px; margin: 10px; " viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+              </svg>
+            </div>
+            <div class="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" style="width:24px; margin: 10px;" fill="currentColor"
+                class="bi bi-cart2" viewBox="0 0 16 19">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+              </svg>
+            </div>
+            
+          </div>
+  
+        </div>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <!--<div class="cart-menu">
+          
+          <h2>Cart</h2>
+          <hr>
+          <ul>
+            <li>Meat</li>
+            <li>Rice</li>
+            <li>Sprite</li>
+          </ul>
+          <hr>
+        </div>-->
+        <div class="cart-container">
+          <i class="fa-solid fa-xmark" id="close"></i>
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>£<span id="total">0</span></td>
+            </tr></table>
+  
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <button id="checkout">Checkout</button>
+          </div>
+        </div>
+      </nav>
+  <section class="terms-conditions">
+    <h1>Terms and Conditions</h1>
+    <p>Last updated: <data value="">20/08/2024</data></p>
+
+    <h2>1. Eligibility</h2>
+    <p>The Website is intended for use by individuals who are 18 years of age or older. By using the Website, you represent and warrant that you are at least 18 years old and have the legal capacity to enter into a binding agreement.</p>
+
+    <h2>2. Intellectual Property</h2>
+    <p>The Website and all content, including but not limited to text, images, graphics, and software, are the property of Ali Varities Store or its licensors. You may not reproduce, modify, display, sell, or distribute the Website or any content without our prior written consent.</p>
+
+    <h2>3. User Accounts</h2>
+    <p>To use certain features of the Website, you may need to create a user account. You are responsible for maintaining the confidentiality of your account and password, and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security.</p>
+
+    <h2>4. Orders and Payment</h2>
+    <p>By placing an order through the Website, you agree to pay the prices listed for the products and services you select. We reserve the right to modify prices and availability at any time. Payment is due at the time of order, and we accept various payment methods, including credit cards and PayPal.</p>
+
+    <h2>5. Shipping and Delivery</h2>
+    <p>We will use reasonable efforts to ship products within the estimated delivery timeframes listed on the Website. However, we are not responsible for delays caused by factors beyond our control, such as weather, traffic, or supplier issues.</p>
+
+    <h2>6. Returns and Refunds</h2>
+    <p>You may return products within 30 days of delivery for a refund or exchange. Products must be in their original condition and packaging. We reserve the right to refuse returns or exchanges if products are damaged or worn.</p>
+
+    <h2>7. Warranty and Liability</h2>
+    <p>We warrant that products will be free from defects in materials and workmanship for a period of 1 year from delivery. Our liability for damages or losses arising from the use of our products is limited to the purchase price of the product.</p>
+
+    <h2>8. Governing Law and Jurisdiction</h2>
+    <p>These Terms will be governed by and construed in accordance with the laws of England and Wales. Any disputes arising from these Terms will be resolved through binding arbitration in accordance with the rules of the London Court of International Arbitration.</p>
+
+    <h2>9. Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time without notice. Your continued use of the Website after the effective date of any changes will constitute your acceptance of the revised Terms.</p>
+
+    <p>By using the Website, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+  </section>
+  <script>
+    // Error handling for menu toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    if (hamburger && navbarMenu) {
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navbarMenu.classList.toggle("active");
+        });
+    } else {
+        console.error("Error!");
+    }
+
+    // Error handling for dark mode toggle
+    const toggleButton = document.querySelector('.dark-light');
+
+    if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    } else {
+        console.error("Error!");
+    }
+</script>
+  <script src="../script/script.js"></script>
+</body>
+</html>
