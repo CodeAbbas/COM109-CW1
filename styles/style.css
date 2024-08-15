@@ -85,7 +85,6 @@ body {
 
 .navbar-logo img {
   height: 50px;
-  mix-blend-mode: multiply;
 }
 
 .navbar-menu {
@@ -772,7 +771,6 @@ li img{
 .footer-logo img {
   width: 100px;
   height: auto;
-  mix-blend-mode: multiply;
 }
 .aerial-view-media {
           object-fit: contain;
