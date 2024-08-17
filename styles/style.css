@@ -405,12 +405,14 @@ table td:nth-last-child(1) {
 }
 
 .gallery .buttons .prev {
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
+  margin-left: 10px;
   float: left;
 }
 
 .gallery .buttons .next {
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 5px 5px 0;
+  margin-right: 10px;
   float: right;
 }
 
@@ -430,9 +432,9 @@ table td:nth-last-child(1) {
 
 
 .title {
-  font-family: "Lilita One", sans-serif;
+  
   font-size: 2em;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   opacity: 0.8;
   font-weight: bold;
   margin-bottom: 10px;
@@ -504,6 +506,13 @@ li img{
   
   padding: 60px 20px;
   
+}
+.heading-h1 {
+  background: var(--bt-color);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
 .product-grid {
