@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ali Varities Store</title>
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boostrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -24,8 +22,7 @@
           <li><a href="./about.html">About</a></li>
           <li>
             <div class="dropdown">
-              <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products <i
-                    class="fa fa-angle-down"></i></a></div>
+              <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products <i class="fa fa-angle-down"></i></a></div>
               <div class="dropdown-content">
                 <a href="./index.html">Fruit</a>
                 <a href="./index.html">Vegetables</a>
@@ -38,19 +35,16 @@
         </ul>
         <div class="nav-buttons">
           <div class="dark-light">
-            <svg style="width:24px; margin: 10px; " viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"
-              fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg style="width:24px; margin: 10px; " viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
             </svg>
           </div>
           <div class="cart">
-            <svg xmlns="http://www.w3.org/2000/svg" style="width:24px; margin: 10px;" fill="currentColor"
-              class="bi bi-cart2" viewBox="0 0 16 19">
-              <path
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:24px; margin: 10px;" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 19">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
             </svg>
           </div>
-          
+
         </div>
 
       </div>
@@ -66,9 +60,9 @@
         <table>
           <thead>
             <tr>
-            <th><strong>Product</strong></th>
-            <th><strong>Price</strong></th>
-          </tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
           </thead>
           <tbody id="carttable">
           </tbody>
@@ -81,33 +75,28 @@
           </tr>
           <tr>
             <td>x <span id="itemsquantity">0</span></td>
-           
-            <td>£<span id="total">0</span></td>
-          </tr></table>
 
-          
-        <div class="cart-buttons">  
+            <td>£<span id="total">0</span></td>
+          </tr>
+        </table>
+
+        <div class="cart-buttons">
           <button id="emptycart">Empty Cart</button>
           <button id="checkout">Checkout</button>
         </div>
       </div>
     </nav>
 
-
     <!-- Gallery Slider -->
     <div class="homepage-hero-slider gallery">
       <div class="photos">
-        <div class="slide block active"
-          style="background: url(https://finturf.com/wp-content/uploads/store-shelves.jpg.webp) no-repeat center center; background-size: cover;">
+        <div class="slide block active" style="background: url(https://finturf.com/wp-content/uploads/store-shelves.jpg.webp) no-repeat center center; background-size: cover;">
         </div>
-        <div class="slide block"
-          style="background: url(https://imonkey-blog.imgix.net/blog/wp-content/uploads/2017/01/27133639/shutterstock_339622673.jpg) no-repeat center center; background-size: cover;">
+        <div class="slide block" style="background: url(https://imonkey-blog.imgix.net/blog/wp-content/uploads/2017/01/27133639/shutterstock_339622673.jpg) no-repeat center center; background-size: cover;">
         </div>
-        <div class="slide block"
-          style="background: url(https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/shopping-sixteen_nine.jpg?size=948:533) no-repeat center center; background-size: cover;">
+        <div class="slide block" style="background: url(https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/shopping-sixteen_nine.jpg?size=948:533) no-repeat center center; background-size: cover;">
         </div>
-        <div class="slide block"
-          style="background: url(https://es.staci.com/content/uploads/sites/6/cache/uploads/sites/2/2020/11/fmcg-staci-2880x1440-1/400110243.jpg) no-repeat center center; background-size: cover;">
+        <div class="slide block" style="background: url(https://es.staci.com/content/uploads/sites/6/cache/uploads/sites/2/2020/11/fmcg-staci-2880x1440-1/400110243.jpg) no-repeat center center; background-size: cover;">
         </div>
       </div>
       <div class="buttons">
@@ -159,10 +148,45 @@
       </ol>
     </div>
   </section>
+  <!-- Our Features -->
+  <section class="features">
+    <div class="feat-title">
+      <h2>Our <span class="heading-h1">Features</span></h2>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/oralyildiz/image/upload/v1632036004/feature-img-1_fctppw.png" alt="">
+            <h3>Fresh and Organic</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/oralyildiz/image/upload/v1632036004/feature-img-2_vuplnq.png" alt="">
+            <h3>Free Delivery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/oralyildiz/image/upload/v1632036004/feature-img-3_ppb2wf.png" alt="">
+            <h3>Easy Payments</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
 
   <!-- Products -->
   <section class="products" id="products">
-    <h1 class="heading-h1">Products</h1>
+    <div class="prod-title">
+      <h1 class="heading-h1">Products</h1>
+    </div>
+    
     <div class="product-grid">
       <div class="product-item">
         <img loading="lazy" src="./img/products/produce.png" alt="Produce">
@@ -200,55 +224,45 @@
         <button class="addtocart">Add to Cart</button>
       </div>
       <div class="product-item">
-        <img loading="lazy"
-          src="./img/products/Drinks.png"
-          alt="Product 6">
+        <img loading="lazy" src="./img/products/Drinks.png" alt="Product 6">
         <h2 class="productname">Drinks</h2>
         <p>Product description</p>
         <p class="price">£1.59</p>
         <button class="addtocart">Add to Cart</button>
       </div>
       <div class="product-item">
-        <img loading="lazy"
-          src="./img/products/Masala.png"
-          alt="Masala">
+        <img loading="lazy" src="./img/products/Masala.png" alt="Masala">
         <h2 class="productname">Masala</h2>
         <p>Product description</p>
         <p class="price">£3.99</p>
-        <button  class="addtocart">Add to Cart</button>
+        <button class="addtocart">Add to Cart</button>
       </div>
       <div class="product-item">
-        <img loading="lazy"
-          src="./img/products/Households.png"
-          alt="Product 6">
+        <img loading="lazy" src="./img/products/Households.png" alt="Product 6">
         <h2 class="productname">Households</h2>
         <p>Product description</p>
         <p class="price">£15.99</p>
-        <button  class="addtocart">Add to Cart</button>
+        <button class="addtocart">Add to Cart</button>
       </div>
       <div class="product-item">
-        <img loading="lazy"
-          src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg"
-          alt="Product 6">
+        <img loading="lazy" src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg" alt="Product 6">
         <h2 class="productname">sdygy</h2>
         <p>Product description</p>
         <p class="price">£6.99</p>
-        <button  class="addtocart">Add to Cart</button>
+        <button class="addtocart">Add to Cart</button>
       </div>
       <div class="product-item">
-        <img loading="lazy"
-          src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg"
-          alt="Product 6">
+        <img loading="lazy" src="https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg" alt="Product 6">
         <h2>Households</h2>
         <p>Product description</p>
         <p class="price">£11.99</p>
-        <button  class="addtocart">Add to Cart</button>
+        <button class="addtocart">Add to Cart</button>
       </div>
     </div>
   </section>
   <!-- Contact section -->
   <section class="contact-section scpad" id="contact">
-    <h2>Contact Us</h2>
+    <h2 class="heading-h1">Contact Us</h2>
     <p style="text-align: center;">We would love to hear from you! Fill out the form below to contact us.</p>
     <form id="contact-form">
       <div class="form-group">
@@ -292,7 +306,6 @@
           <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=E7 8DW&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
           <a href="https://embed-googlemap.com">google map embed html</a>
         </div>
-          <style>.mapouter{position:relative;text-align:right;width:100%;height:400px; }.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
       </div>
 
       <div class="footer-links">
