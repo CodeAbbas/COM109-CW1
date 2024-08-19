@@ -65,7 +65,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  border: 2px solid black;
+  border: 2px solid var(--color);
   border-radius: 10px;
 }
 
