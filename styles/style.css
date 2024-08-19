@@ -256,8 +256,8 @@ table td:nth-last-child(1) {
 /*cart*/
 .signin {
   font-family: "Quicksand", sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color);
+  color: var(--bg-color);
   border: none;
   margin: 7px 10px;
   border-radius: 7px;
@@ -269,7 +269,10 @@ table td:nth-last-child(1) {
 }
 .signin a {
   text-decoration: none;
-  color: #fff;
+  color: var(--bg-color);
+}
+.signin a:hover{
+  color: var(--color);
 }
 .error {
   color: red;
@@ -705,6 +708,7 @@ li img {
   
   .discount-countdown li {
     font-size: calc(1.125rem * var(--smaller));
+    padding: 0.5em;
   }
   
   .discount-countdown li span {
@@ -921,4 +925,25 @@ li img {
 .top a {
   text-decoration: none;
   color: #fff;
+}
+
+.cc_container a,
+.cc_container a:visited {
+  color: #282828;
+}
+.cc_container a:hover,
+.cc_container a:focus {
+  color: #51d3ff;
+}
+
+/* Button */
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited {
+  color: #fff;
+  background-color: #f38630;
+}
+.cc_container .cc_btn:hover,
+.cc_container .cc_btn:focus {
+  color: #fff;
+  background: #51d3ff;
 }
