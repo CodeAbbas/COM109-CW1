@@ -307,4 +307,18 @@ promoBox({
   closeButtonText: "✖️", showOnHash: "#promo", deleteCookieOnUrl: "#clear", fadeInDuration: 1, fadeOutDuration: 0.2, loadDelay: 2, autoCloseSeconds: 30
 });
 // callback functions 
-var promoBoxStart = function () { if (typeof console !== "undefined") { console.log("promoBox has started..."); } }; var promoBoxClick = function () { if (typeof console !== "undefined") { console.log("promoBox image was clicked"); } }; var promoBoxClose = function () { if (typeof console !== "undefined") { console.log("promoBox terminated"); } }; 
+var promoBoxStart = function () {
+  if (typeof console !== "undefined") {
+    console.log("promoBox has started...");
+  }
+};
+var promoBoxClick = function () {
+  if (typeof console !== "undefined") {
+    console.log("promoBox image was clicked");
+  }
+};
+var promoBoxClose = function () {
+  if (typeof console !== "undefined") {
+    console.log("promoBox terminated");
+  }
+}; 
