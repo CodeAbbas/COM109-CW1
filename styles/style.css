@@ -670,6 +670,13 @@ li img {
   color: var(--color);
 }
 
+.services{
+  background-color: var(--bg-color);
+}
+.container-fluid{
+  background-color: var(--bg-color);
+}
+
 /* DISCOUNT COUNTDOWN */
 .discount-countdown {
   margin: 0 20px;

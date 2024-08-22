@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product detail page design html || ecommerce product page design html</title>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/styles/style.css"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css'>
+<link rel='stylesheet' href='https://w3learnpoint.com/cdn/jquery-picZoomer.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../../styles/style.css">
+<link rel="stylesheet" href="../../styles/page.css">
+
+</head>
+<body>
+<section id="services bg-page" class="services section-bg">
+   <div class="container-fluid">
+      <div class="row row-sm">
+         <div class="col-md-6 _boxzoom">
+            <div class="zoom-thumb">
+               <ul class="piclist">
+                  <li><img src="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/img/products/Bakery.png" alt=""></li>
+                  <li><img src="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/img/products/Bakery.png" alt=""></li>
+                  <li><img src="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/img/products/Bakery.png" alt=""></li>
+                  <li><img src="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/img/products/Bakery.png" alt=""></li>
+               </ul>
+            </div>
+            <div class="_product-images">
+               <div class="picZoomer">
+                  <img class="my_img" src="https://s.fotorama.io/1.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="_product-detail-content">
+               <p class="_p-name">Carrot </p>
+               <div class="_p-price-box">
+                  <div class="p-list">
+                     <!--<span><i class="fa fa-gbp"></i> <del> 2.99  </del>   </span>-->
+                     <span class="price"> <i class="fa fa-gbp"></i> 1.99 </span>
+                  </div>
+                  <div class="_p-add-cart">
+                     <div class="_p-qty">
+                        <span>Add Quantity</span>
+                        <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                        <input type="number" name="qty" id="number" value="1" />
+                        <div class="value-button increase_" id="" value="Increase Value">+</div>
+                     </div>
+                  </div>
+                  <div class="_p-features">
+                     <span> Description About this product:- </span>
+                     Elevate your meals with our Premium Fresh Carrots, a versatile and nutritious addition to any kitchen. Grown under optimal conditions, these carrots are carefully harvested to ensure their signature vibrant orange color, crisp texture, and naturally sweet flavor.
+
+Packed with essential vitamins and nutrients, particularly beta-carotene, our carrots are a powerhouse of health benefits, supporting eye health, boosting immunity, and promoting overall well-being. Whether you're adding them to salads, soups, or enjoying them as a healthy snack, these carrots deliver consistent quality and taste.
+                  </div>
+                  <form action="" method="post" accept-charset="utf-8">
+                     <ul class="spe_ul"></ul>
+                     <div class="_p-qty-and-cart">
+                        <div class="_p-add-cart">
+                           <button class="addtocart" tabindex="0">
+                           <i class="fa fa-shopping-cart"></i> Add to Cart
+                           </button>
+                           <input type="hidden" name="pid" value="18" />
+                           <input type="hidden" name="price" value="850" />
+                           <input type="hidden" name="url" value="" />    
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js'></script><script  src="./script.js"></script>
+<script src="../../script/piczoomer.js"></script>
+</body>
+</html>
