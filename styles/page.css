@@ -1,7 +1,6 @@
 
 .picZoomer{
 	position: relative;
-    background-color: black;
 }
 .picZoomer-pic-wp{
 	position: relative;
@@ -16,10 +15,16 @@
 	top: 0;
 	left: 0;
 }
-.picZoomer-pic{
-	/*width: 100%;
-	height: 100%;*/
+
+.navbar-logo img {
+    margin-top: -15px;
 }
+.nav-buttons{
+    margin-top:  -13px;
+}
+.container-fluid {
+    margin-top:60px;
+  }
 .picZoomer-zoom-wp{
 	display: none;
 	position: absolute;
@@ -66,7 +71,7 @@
 }
 .piclist li img{
     width: 97%;
-    height: auto;
+    height: 100%;
 }
 
 /* custom style */
@@ -77,9 +82,6 @@
 
 
 
-.section-bg {
-    background-color: #fff1e0;
-}
 section {
     padding: 60px 0;
 }
@@ -119,27 +121,23 @@ section {
 
 /*======products-details=====*/
 ._product-detail-content {
-    
+
     padding: 15px;
-    background: linear-gradient(
+    background: linear-gradient(180deg,
 
-    180deg,
+            rgba(255, 255, 255, 0.28) 0%,
 
-    rgba(255, 255, 255, 0.28) 0%,
+            rgba(255, 255, 255, 0) 100%);
 
-    rgba(255, 255, 255, 0) 100%
+    backdrop-filter: blur(10px);
 
-  );
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
 
-  backdrop-filter: blur(10px);
-
-  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
-
-    0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+        0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 ._product-detail-content p._p-name {
     color: black;
-    font-size: 20px;
+    font-size: 1.5rem;
     border-bottom: 1px solid lightgray;
     padding-bottom: 12px;
 }
@@ -147,9 +145,10 @@ section {
     margin-right: 15px;
 }
 .p-list span.price {
-    font-size: 25px;
+    font-size: 1rem;
    
 }
+
 ._p-qty > span {
     color: black;
     margin-right: 15px;
@@ -240,7 +239,7 @@ section {
     width: 24%;  
   }
   .piclist li img{
-    height: auto;
+    height: 100%;
 
     object-fit: contain;
   }

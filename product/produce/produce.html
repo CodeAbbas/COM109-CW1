@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Produce/Carrot</title>
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/CodeAbbas/COM109-CW1/main/styles/style.css"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css'>
-<link rel='stylesheet' href='https://w3learnpoint.com/cdn/jquery-picZoomer.css'><link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="../../styles/style.css">
-<link rel="stylesheet" href="../../styles/page.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Varities Store</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boostrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../styles/style.css">
 </head>
+
 <body>
-   <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar">
       <div class="hero">
         <a href="#" class="navbar-logo"><img src="../../img/AliStore.jpg" alt="Ali Store"></a>
         <ul class="navbar-menu">
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../../about.html">About</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About</a></li>
           <li>
             <div class="dropdown">
-              <div class="dropbtn"><a href="../../index.html#products" style="transition: 0.1s;">Products <i class="fa fa-angle-down"></i></a></div>
+              <div class="dropbtn"><a href="#products" style="transition: 0.1s;">Products <i class="fa fa-angle-down"></i></a></div>
               <div class="dropdown-content">
-                <a href="../produce.html">Produce</a>
-                <a href="../meat.html">Meat</a>
-                <a href="../dairy.html">Dairy</a>
-                <a href="../bakery.html">Bakery</a>
-                <a href="../carbohydrate.html">Carbohydrate</a>
-                <a href="../snacks.html">Snacks & Sides</a>
-                <a href="../drinks.html">Soft Drinks</a>
-                <a href="../households.html">Households</a>
-                <a href="../new.html">New added..</a>
+                <a href="#">Produce</a>
+                <a href="./index.html">Meat</a>
+                <a href="./index.html">Dairy</a>
+                <a href="./index.html">Bakery</a>
+                <a href="./index.html">Carbohydrate</a>
+                <a href="./index.html">Snacks & Sides</a>
+                <a href="./index.html">Soft Drinks</a>
+                <a href="./index.html">Households</a>
+                <a href="./index.html">New added..</a>
               </div>
             </div>
           </li>
-          <li><a href="../../index.html#contact">Contact</a></li>
-          <button class="signin"><a href="../../users/signin.html">Sign in</a></button>
+          <li><a href="#contact">Contact</a></li>
+          <button class="signin"><a href="./users/signin.html">Sign in</a></button>
         </ul>
         <div class="nav-buttons">
           <div class="dark-light">
@@ -91,102 +91,47 @@
         </div>
       </div>
     </nav>
-<section id="services bg-page" class="services section-bg">
-   <div class="container-fluid">
-      <div class="row row-sm">
-         <div class="col-md-6 _boxzoom">
-            <div class="zoom-thumb">
-               <ul class="piclist">
-                  <li><img src="../../img/produce/carrot.png" alt=""></li>
-                  <li><img src="../../img/produce/carrot1.png" alt=""></li>
-                  <li><img src="../../img/produce/carrot.png" alt=""></li>
-                  <li><img src="../../img/produce/carrot1.png" alt=""></li>
-               </ul>
-            </div>
-            <div class="_product-images">
-               <div class="picZoomer">
-                  <img class="my_img" src="https://s.fotorama.io/1.jpg" alt="">
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <div class="_product-detail-content">
-               <p class="_p-name productname">Carrot </p>
-               <div class="_p-price-box">
-                  <div class="p-list">
-                     <!--<span><i class="fa fa-gbp"></i> <del> 2.99  </del>   </span>-->
-                     <span class="price">£1.99 </span>
-                  </div>
-                  <div class="_p-add-cart">
-                     <div class="_p-qty">
-                        <span>Add Quantity</span>
-                        <div class="value-button decrease_" id="" value="Decrease Value">-</div>
-                        <input type="number" name="qty" id="number" value="1" />
-                        <div class="value-button increase_" id="" value="Increase Value">+</div>
-                     </div>
-                  </div>
-                  <div class="_p-features">
-                     <span> Description About this product:- </span>
-                     Elevate your meals with our Premium Fresh Carrots, a versatile and nutritious addition to any kitchen. Grown under optimal conditions, these carrots are carefully harvested to ensure their signature vibrant orange color, crisp texture, and naturally sweet flavor.
-
-Packed with essential vitamins and nutrients, particularly beta-carotene, our carrots are a powerhouse of health benefits, supporting eye health, boosting immunity, and promoting overall well-being. Whether you're adding them to salads, soups, or enjoying them as a healthy snack, these carrots deliver consistent quality and taste.
-                  </div>
-                  <form action="" method="post" accept-charset="utf-8">
-                     <ul class="spe_ul"></ul>
-                     <div class="_p-qty-and-cart">
-                        <div class="_p-add-cart">
-                           <button class="addtocart" tabindex="0">
-                           <i class="fa fa-shopping-cart"></i> Add to Cart
-                           </button>
-                           <input type="hidden" name="pid" value="18" />
-                           <input type="hidden" name="price" value="850" />
-                           <input type="hidden" name="url" value="" />    
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<footer class="footer">
-   <div class="footer-content">
-     <div class="footer-logo">
-       <a href="#"><img src="../../img/AliStore.jpg" alt="Ali Store"></a>
-       <p style="text-align: center;"><i>139 Green Street, London, E7 8DW</i></p>
-     </div>
-
-     <div class="mapouter">
-       <div class="gmap_canvas">
-         <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=E7 8DW&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-         <a href="https://embed-googlemap.com">google map embed html</a>
-       </div>
-     </div>
-
-     <div class="footer-links">
-       <h3>Links</h3>
-       <ul>
-         <li><a href="#">Home</a></li>
-         <li><a href="#products">Products</a></li>
-         <li><a href="#contact">Contact</a></li>
-       </ul>
-     </div>
-     <div class="footer-social">
-       <h3>Social Media</h3 <ul>
-       <li><a href="#"><i class="fa fa-facebook"></i>AliStore</a></li>
-       <li><a href="#"><i class="fa fa-instagram"></i>AliStore</a></li>
-       <li><a href="#"><i class="fa fa-twitter"></i></a>AliStore</li>
-       </ul>
-     </div>
-   </div>
-   <div class="footer-copyright">
-     <p>Copyright &copy; 2024 Ali Varities Store. All Rights Reserved.</p>
-     <p class="top"><a href="#">Back &#x2191; to top</a></p>
-   </div>
- </footer>
-<script>
-   // Error handling for menu toggle
+    <section class="products" id="products">
+        <div class="prod-title">
+          <h1 class="heading-h1">Produce</h1>
+        </div>
+        
+        <div class="product-grid">
+          <div class="product-item" href="./carrot.html">
+            <img loading="lazy" src="../../img/produce/carrot.png" alt="Produce">
+            <h2 class="productname">Carrot</h2>
+            <p>Product description</p>
+            <p class="price">£1.99</p>
+            <button class="addtocart">Add to Cart</button>
+            <button class="signin"><a href="./carrot.html">View</a></button>
+          </div>
+          <div class="product-item">
+            <img loading="lazy" src="../../img/produce/apple.png" alt="Meat">
+            <h2 class="productname">Apple</h2>
+            <p>Product description</p>
+            <p class="price">£2.99</p>
+            <button class="addtocart">Add to Cart</button>
+            <button class="signin"><a href="./apple.html">View</a></button>
+          </div>
+          <div class="product-item">
+            <img loading="lazy" src="./img/products/Dairy.png" alt="Dairy">
+            <h2 class="productname">Dairy</h2>
+            <p>Product description</p>
+            <p class="price">£2.99</p>
+            <button class="addtocart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img loading="lazy" src="./img/products/Carbohydrate.png" alt="Carbohydrate">
+            <h2 class="productname">Carbohydrate</h2>
+            <p>Product description</p>
+            <p class="price">£4.99</p>
+            <button class="addtocart">Add to Cart</button>
+          </div>
+        </div>
+    </section>
+    
+    <script>
+        // Error handling for menu toggle
 const hamburger = document.querySelector(".hamburger");
 const navbarMenu = document.querySelector(".navbar-menu");
 
@@ -352,11 +297,6 @@ if (toggleButton) {
 } else {
   console.error("Error!");
 }
-</script>
-
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js'></script><script  src="./script.js"></script>
-<script src="../../script/piczoomer.js"></script>
+    </script>
 </body>
 </html>
